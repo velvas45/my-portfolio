@@ -70,4 +70,4 @@ app.post("/emailHandler", (req, res) => {
   main().catch(console.error);
 });
 
-app.listen(3000, () => console.log("server started..."));
+app.listen(process.env.PORT || 8080, () => console.log("server started..."));
