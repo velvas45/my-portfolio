@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+
+  <!-- mystyle -->
+  <link rel="stylesheet" href="/public/css/style.css" />
+
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="header__logo">Portfolio</a>
+    <div class="header__toggle" onclick="toggleMenu()"></div>
+    <ul class="header__menu">
+      <li><a href="#" onclick="toggleMenu()">Home</a></li>
+      <li><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#teknologi" onclick="toggleMenu()">Teknologi</a></li>
+      <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+  </header>
+  <section class="banner">
+    <div class="banner__box">
+      <h2>Hello, Saya <span>Helmi Agustiawan</span></h2>
+      <h3>Saya adalah Front End Web Developer.</h3>
+      <a href="#about" class="btn">About Me</a>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="about__heading">
+      <h2>About Me</h2>
+    </div>
+    <div class="about__content">
+      <div class="about__contentBox">
+        <h3>Saya adalah Front End Web Developer.</h3>
+        <p>
+          Saya seorang fresh graduate, lulusan Universitas Gunadarma, jurusan
+          Sistem Informasi dengan GPA 3.37. 7. Saya memiliki kondisi kesehatan
+          yang baik. Selain berkomunikasi dengan baik dan sopan, saya juga
+          bisa bekerja sebagai tim atau individu. Setiap pekerjaan selalu
+          dilakukan dengan detail dan tepat waktu. Saya yakin saya dapat
+          berkontribusi untuk setiap pekerjaan front end developer.
+        </p>
+      </div>
+
+      <div class="about__contentImage">
+        <img src="./public/img/profile-img.jpeg" alt="profile image" class="about__image" />
+      </div>
+    </div>
+  </section>
+  <section class="teknologi" id="teknologi">
+    <div class="teknologi__heading">
+      <h2>Teknologi Yang Digunakan</h2>
+      <p>
+        Berikut beberapa bahasa programming dan teknologi yang saya kuasai :
+      </p>
+    </div>
+    <div class="teknologi__container">
+      <div class="teknologi__skills">
+        <span class="teknologi__name">HTML</span>
+        <div class="teknologi__percent">
+          <div class="teknologi__progress" style="width: 90%"></div>
+        </div>
+        <span class="teknologi__value"> 90% </span>
+      </div>
+
+      <div class="teknologi__skills">
+        <span class="teknologi__name">CSS</span>
+        <div class="teknologi__percent">
+          <div class="teknologi__progress" style="width: 80%"></div>
+        </div>
+        <div class="teknologi__value">80%</div>
+      </div>
+
+      <div class="teknologi__skills">
+        <span class="teknologi__name">Javascript</span>
+        <div class="teknologi__percent">
+          <div class="teknologi__progress" style="width: 75%"></div>
+        </div>
+        <div class="teknologi__value">75%</div>
+      </div>
+
+      <div class="teknologi__skills">
+        <span class="teknologi__name">Bootstrap</span>
+        <div class="teknologi__percent">
+          <div class="teknologi__progress" style="width: 65%"></div>
+        </div>
+        <div class="teknologi__value">65%</div>
+      </div>
+
+      <div class="teknologi__skills">
+        <span class="teknologi__name">React Js</span>
+        <div class="teknologi__percent">
+          <div class="teknologi__progress" style="width: 60%"></div>
+        </div>
+        <div class="teknologi__value">60%</div>
+      </div>
+
+      <div class="teknologi__skills">
+        <span class="teknologi__name">Materialize CSS</span>
+        <div class="teknologi__percent">
+          <div class="teknologi__progress" style="width: 55%"></div>
+        </div>
+        <div class="teknologi__value">55%</div>
+      </div>
+
+      <div class="teknologi__skills">
+        <span class="teknologi__name">SASS</span>
+        <div class="teknologi__percent">
+          <div class="teknologi__progress" style="width: 50%"></div>
+        </div>
+        <div class="teknologi__value">50%</div>
+      </div>
+
+      <div class="teknologi__skills">
+        <span class="teknologi__name">PWA</span>
+        <div class="teknologi__percent">
+          <div class="teknologi__progress" style="width: 50%"></div>
+        </div>
+        <div class="teknologi__value">50%</div>
+      </div>
+    </div>
+  </section>
+  <section class="project" id="project">
+    <div class="project__heading">
+      <h2>Project Saya</h2>
+      <p>Berikut beberapa project yang saya pernah buat :</p>
+    </div>
+
+    <div class="project__container">
+      <div class="project__row">
+        <div class="project__content">
+          <h3>Netflix Clone</h3>
+          <div class="project__contentBox">
+            <img src="./public/img/netflix-clone.png" alt="netflix clone" />
+            <a href="https://netflix-clone-de330.web.app/" target="_blank" class="project__btn">View</a>
+          </div>
+        </div>
+
+        <div class="project__content">
+          <h3>Amazon Clone</h3>
+          <div class="project__contentBox">
+            <img src="./public/img/amazon-clone.png" alt="amazon clone" />
+            <a href="https://clone-a3e42.web.app/" target="_blank" class="project__btn">View</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project__row">
+        <div class="project__content">
+          <h3>Spotify Clone</h3>
+          <div class="project__contentBox">
+            <img src="./public/img/spotify-clone.png" alt="spotify clone" />
+            <a href="https://spotify-clone-app-83620.web.app/" target="_blank" class="project__btn">View</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <div class="contact__heading">
+      <h2>Contact Me</h2>
+    </div>
+    <div class="contact__content">
+      <div class="contact__info">
+        <h3>Contact Info</h3>
+        <div class="contact__infoBox">
+          <div class="contact__box">
+            <div class="contact__icon">
+              <i class="fa fa-map-marker"></i>
+            </div>
+            <div class="contact__text">
+              <h3>Address</h3>
+              <p>
+                Jalan raya parakan jati, desa susukan<br />Bojong Gede <br />
+                Bogor
+              </p>
+            </div>
+          </div>
+          <div class="contact__box">
+            <div class="contact__icon">
+              <i class="fa fa-phone"></i>
+            </div>
+            <div class="contact__text">
+              <h3>Phone</h3>
+              <p>081319982858</p>
+            </div>
+          </div>
+          <div class="contact__box">
+            <div class="contact__icon">
+              <i class="fa fa-envelope"></i>
+            </div>
+            <div class="contact__text">
+              <h3>Email</h3>
+              <p>helmiagustiawan905@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact__form">
+        <form method="POST" action="emailHandler">
+          <h3>Message Me</h3>
+          <input type="text" name="name" placeholder="Full Name" />
+          <input type="email" name="email" placeholder="Email" />
+          <textarea name="message" placeholder="Masukkan Pesan Anda..."></textarea>
+          <input type="submit" id='submit' />
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>2020 Copyright Helmi Agustiawan - All rights reserved</p>
+  </footer>
+
+  <script src="./public//js/main.js"></script>
+  <script>
+    const button = document.querySelector('#submit');
+    button.addEventListener('click', () => {
+      swal("Terima Kasih", "Email anda sudah terkirim", "success");
+    })
+  </script>
+</body>
+
+</html>

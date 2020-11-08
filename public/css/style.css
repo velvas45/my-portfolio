@@ -1,0 +1,581 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 500ms;
+}
+
+.header__logo {
+  color: #333;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.header__menu {
+  display: flex;
+  position: relative;
+}
+
+.header__menu > li {
+  position: relative;
+  list-style: none;
+}
+
+.header__menu > li > a {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  color: #333;
+  text-decoration: none;
+}
+
+.sticky {
+  background: rgba(165, 214, 167, 0.9);
+  padding: 10px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.sticky > .header__logo {
+  color: #0d47a1;
+}
+
+.sticky > .header__menu > li > a {
+  color: #fff;
+}
+
+section {
+  padding: 100px 40px;
+}
+
+.banner {
+  position: relative;
+  min-height: 100vh;
+  background: url("/public/img/banner_4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.banner__box {
+  margin-top: 70px;
+}
+
+.banner__box > h2 {
+  font-size: 3em;
+  color: #333;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+.banner__box > h2 > span {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.banner__box > h3 {
+  font-size: 1.5 em;
+  color: #333;
+  font-weight: 500;
+}
+
+.banner__box > .btn {
+  position: relative;
+  background: #2196f3;
+  display: inline-block;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500;
+  border-radius: 12px;
+}
+
+.about__heading,
+.teknologi__heading,
+.project__heading,
+.contact__heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.about__heading > h2,
+.project__heading > h2 {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.about__content,
+.contact__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__contentBox {
+  padding-right: 30px;
+}
+
+.about__contentBox > h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about__contentBox > p {
+  text-align: justify;
+}
+
+.about__contentImage {
+  min-width: 50%;
+}
+
+.about__contentImage > img {
+  border-radius: 20px;
+  border: 1px solid lightgray;
+  max-width: 100%;
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.teknologi {
+  background-color: #2e2e2e;
+}
+
+.teknologi__heading > h2,
+.contact__heading > h2 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.teknologi__heading > p {
+  color: #fff;
+}
+
+.teknologi__container {
+  position: relative;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.teknologi__skills {
+  position: relative;
+  display: flex;
+  margin: 20px 0;
+  padding: 24px 10px 18px;
+  background: linear-gradient(#616161 0%, #333 10%, #222);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid #000;
+  transition: 500ms;
+}
+
+.teknologi__container > .teknologi__skills::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 10;
+}
+
+.teknologi__name {
+  width: 110px;
+  text-align: justify;
+  color: #fff;
+  margin-top: -2px;
+  text-transform: uppercase;
+}
+
+.teknologi__value {
+  position: relative;
+  width: 40px;
+  text-align: left;
+  color: #fff;
+  margin-top: -2px;
+  text-transform: uppercase;
+}
+
+.teknologi__percent {
+  position: relative;
+  width: calc(100% - 10px);
+  height: 20px;
+  margin: 0 10px;
+  border-radius: 10px;
+  background: #151515;
+  box-shadow: inset 0 0 10px #000;
+}
+
+.teknologi__progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: inset 0 0 2px #000;
+  animation: animate 4s ease-in-out forwards;
+}
+
+@keyframes animate {
+  from {
+    width: 0;
+  }
+}
+
+.teknologi__skills:nth-child(1) > .teknologi__percent > .teknologi__progress {
+  background: linear-gradient(45deg, #1fe6ff, #673ab7);
+}
+.teknologi__skills:nth-child(2) > .teknologi__percent > .teknologi__progress {
+  background: linear-gradient(45deg, #3bc0ff, #33ff00);
+}
+.teknologi__skills:nth-child(3) > .teknologi__percent > .teknologi__progress {
+  background: linear-gradient(45deg, #22ffde, #2196f3);
+}
+.teknologi__skills:nth-child(4) > .teknologi__percent > .teknologi__progress {
+  background: linear-gradient(45deg, #ffee54, #ff00ca);
+}
+.teknologi__skills:nth-child(5) > .teknologi__percent > .teknologi__progress {
+  background: linear-gradient(45deg, #1fe6ff, #673ab7);
+}
+.teknologi__skills:nth-child(6) > .teknologi__percent > .teknologi__progress {
+  background: linear-gradient(45deg, #3bc0ff, #33ff00);
+}
+.teknologi__skills:nth-child(7) > .teknologi__percent > .teknologi__progress {
+  background: linear-gradient(45deg, #22ffde, #2196f3);
+}
+.teknologi__skills:nth-child(8) > .teknologi__percent > .teknologi__progress {
+  background: linear-gradient(45deg, #ffee54, #ff00ca);
+}
+
+.teknologi__container:hover > .teknologi__skills {
+  opacity: 0.05;
+}
+
+.teknologi__container > .teknologi__skills:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.project__row {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.project__content {
+  margin: 0 15px;
+  transition: 500ms;
+}
+
+.project__contentBox {
+  position: relative;
+}
+
+.project__contentBox > img {
+  border-radius: 10px;
+  border: 1px solid #000;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: left;
+}
+
+.project__contentBox > a {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: #2196f3;
+  opacity: 0.8;
+  display: inline-block;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500;
+  border-radius: 12px;
+  transition: 800ms;
+}
+
+.project__contentBox > a:hover {
+  opacity: 1;
+  background-color: #3f51b5;
+  color: #eeeeee;
+}
+
+.project__container:hover > .project__row > .project__content {
+  opacity: 0.1;
+}
+
+.project__container > .project__row > .project__content:hover {
+  opacity: 1;
+}
+
+.contact {
+  background-color: #111;
+}
+
+.contact__form {
+  min-width: 60%;
+  color: #fff;
+}
+
+.contact__form > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__form > form > h3,
+.contact__info > h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.contact__form > form > input,
+.contact__form > form > textarea {
+  margin-bottom: 20px;
+  padding: 15px;
+  font-weight: 16px;
+  background: #222;
+  border: none;
+  outline: none;
+  color: #fff;
+  resize: none;
+}
+
+.contact__form > form > textarea {
+  min-height: 200px;
+}
+
+.contact__form > form > input:placeholder,
+.contact__form > form > textarea:placeholder {
+  color: #999;
+}
+
+.contact__form > form > input[type="submit"] {
+  max-width: 100px;
+  background: #2196f3;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact__info {
+  min-width: 40%;
+}
+.contact__infoBox {
+  position: relative;
+}
+
+.contact__box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.contact__icon {
+  min-width: 40px;
+  padding-top: 4px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 24px;
+}
+
+.contact__text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  flex-direction: column;
+  font-weight: 300;
+  color: #fff;
+}
+
+.contact__text > h3 {
+  font-weight: 500;
+  color: #2196f3;
+  margin-bottom: 0;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2em;
+  font-weight: 500;
+  background: #00acc1;
+}
+
+.footer > p {
+  color: #fff;
+}
+
+/* responsive  */
+@media (max-width: 991px) {
+  .header,
+  .sticky {
+    padding: 20px 50px;
+    z-index: 1000;
+  }
+
+  .header__menu {
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    opacity: 0;
+    display: block;
+    padding: 100px 50px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    transition: 0.5s;
+    z-index: 999;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    transition: 400ms;
+  }
+
+  .header__menu.active {
+    left: 0;
+    opacity: 1;
+  }
+
+  .header__menu > li > a {
+    font-size: 24px;
+    margin: 10px;
+  }
+  .sticky > .header__menu > li > a {
+    color: #111;
+  }
+
+  .header__toggle {
+    width: 40px;
+    height: 40px;
+    background: url(../img/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+  }
+
+  .header__toggle.active {
+    background: url(../img/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+  }
+
+  .banner {
+    padding: 0 60px 60px;
+  }
+
+  .banner__box > h2 {
+    font-size: 1.5em;
+  }
+
+  .banner__box > h3 {
+    font-size: 1em;
+  }
+
+  .banner__box > .btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .about__heading > h2,
+  .project__heading > h2,
+  .teknologi__heading > h2,
+  .contact__heading > h2 {
+    font-size: 24px;
+  }
+
+  .about__contentBox > h3 {
+    font-size: 20px;
+  }
+
+  .about__content,
+  .contact__content {
+    flex-direction: column;
+  }
+
+  .about__contentBox {
+    margin-bottom: 20px;
+  }
+
+  .about__contentImage {
+    margin: 0 auto;
+  }
+
+  .contact__info {
+    margin: 20px 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header,
+  .sticky {
+    padding: 20px 20px;
+  }
+
+  .banner {
+    padding: 0 20px 40px;
+  }
+
+  section {
+    padding: 100px 20px;
+  }
+
+  .teknologi__container {
+    width: 100%;
+  }
+
+  .project__row {
+    grid-template-columns: 100%;
+  }
+
+  .contact__form > form > input[type="submit"] {
+    max-width: 100%;
+  }
+
+  .footer {
+    font-size: 0.82em;
+  }
+}
