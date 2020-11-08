@@ -209,8 +209,8 @@
       <div class="contact__form">
         <form method="POST" action="emailHandler">
           <h3>Message Me</h3>
-          <input type="text" name="name" placeholder="Full Name" required />
-          <input type="email" name="email" placeholder="Email" required />
+          <input type="text" id="name" name="name" placeholder="Full Name" required />
+          <input type="email" id="email" name="email" placeholder="Email" required />
           <textarea name="message" placeholder="Masukkan Pesan Anda..."></textarea>
           <input type="submit" id='submit' />
         </form>
@@ -222,13 +222,7 @@
     <p>2020 Copyright Helmi Agustiawan - All rights reserved</p>
   </footer>
 
-  <script src="./public//js/main.js"></script>
-  <script>
-    const button = document.querySelector('#submit');
-    button.addEventListener('click', () => {
-      swal("Terima Kasih", "Email anda sudah terkirim", "success");
-    })
-  </script>
+  <script src="./public/js/main.js"></script>
 </body>
 
 </html>

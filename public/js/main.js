@@ -9,3 +9,19 @@ function toggleMenu() {
   menuToggle.classList.toggle("active");
   menu.classList.toggle("active");
 }
+
+const button = document.querySelector("#submit");
+button.addEventListener("click", () => {
+  const email = document.getElementById("email").value;
+  const name = document.getElementById("name").value;
+  if (email !== "" && name !== "") {
+    swal("Terima Kasih", "Email anda sudah terkirim", "success");
+  } else {
+    swal({
+      title: "Maaf Isi Semua Form !",
+      text: "Jangan lupa untuk mengisi nama anda dan juga email anda",
+      icon: "warning",
+      dangerMode: true,
+    });
+  }
+});
