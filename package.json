@@ -4,7 +4,10 @@
   "description": "portfolio website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    
+    "start": "node index.js"
+
   },
   "author": "helmi agustiawan",
   "license": "ISC",
@@ -12,7 +15,10 @@
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
+    "heroku": "^7.47.0",
+    "local": "^0.3.3",
     "nodemailer": "^6.4.15",
-    "sweetalert": "^2.1.2"
+    "sweetalert": "^2.1.2",
+    "web": "0.0.2"
   }
 }
