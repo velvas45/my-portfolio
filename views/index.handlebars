@@ -8,6 +8,7 @@
 
   <!-- mystyle -->
   <link rel="stylesheet" href="/public/css/style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -31,33 +32,35 @@
   <section class="banner">
     <div class="banner__box">
       <h2>Hello, Saya <span>Helmi Agustiawan</span></h2>
-      <h3>Saya adalah Front End Web Developer.</h3>
+      <h3>Saya adalah <span class="banner__automated"></span></h3>
       <a href="#about" class="btn">About Me</a>
     </div>
   </section>
   <section class="about" id="about">
-    <div class="about__heading">
+    <div class="about__heading" data-aos="flip-up" data-aos-duration="800">
       <h2>About Me</h2>
     </div>
     <div class="about__content">
-      <div class="about__contentBox">
-        <h3>Saya adalah Front End Web Developer.</h3>
+      <div class="about__contentBox" data-aos="zoom-in-left" data-aos-duration="1000">
+        <h3>Saya adalah <span class="about__automated"></span></h3>
         <p>
           Saya seorang fresh graduate, lulusan Universitas Gunadarma, jurusan
-          Sistem Informasi dengan GPA 3.37. 7. Saya memiliki kondisi kesehatan
+          Sistem Informasi dengan GPA 3.37. Saya memiliki kondisi kesehatan
           yang baik. Selain berkomunikasi dengan baik dan sopan, saya juga
           bisa bekerja sebagai tim atau individu. Setiap pekerjaan selalu
           dilakukan dengan detail dan tepat waktu. Saya yakin saya dapat
           berkontribusi untuk setiap pekerjaan front end developer.
         </p>
+
+        <a href="./public/file/helmiagustiawan_cv.pdf" class="about_downloadCv" download>Download CV</a>
       </div>
 
-      <div class="about__contentImage">
-        <img src="./public/img/profile-img.jpeg" alt="profile image" class="about__image" />
+      <div class="about__contentImage" data-aos="flip-right" data-aos-duration="1200">
+        <img src="./public/img/profile-illustration.jpeg" alt="profile image" class="about__image" />
       </div>
     </div>
   </section>
-  <section class="teknologi" id="teknologi">
+  <section class="teknologi" id="teknologi" data-aos-duration="1000" data-aos="zoom-out-up">
     <div class="teknologi__heading">
       <h2>Teknologi Yang Digunakan</h2>
       <p>
@@ -131,14 +134,14 @@
     </div>
   </section>
   <section class="project" id="project">
-    <div class="project__heading">
+    <div class="project__heading" data-aos="zoom-out" data-aos-duration="1200">
       <h2>Project Saya</h2>
       <p>Berikut beberapa project yang saya pernah buat :</p>
     </div>
 
     <div class="project__container">
       <div class="project__row">
-        <div class="project__content">
+        <div class="project__content" data-aos="fade-up-right" data-aos-duration="1300">
           <h3>Netflix Clone</h3>
           <div class="project__contentBox">
             <img src="./public/img/netflix-clone.png" alt="netflix clone" />
@@ -146,7 +149,7 @@
           </div>
         </div>
 
-        <div class="project__content">
+        <div class="project__content" data-aos="fade-up-left" data-aos-duration="1500">
           <h3>Amazon Clone</h3>
           <div class="project__contentBox">
             <img src="./public/img/amazon-clone.png" alt="amazon clone" />
@@ -156,7 +159,7 @@
       </div>
 
       <div class="project__row">
-        <div class="project__content">
+        <div class="project__content" data-aos="zoom-in" data-aos-duration="1500">
           <h3>Spotify Clone</h3>
           <div class="project__contentBox">
             <img src="./public/img/spotify-clone.png" alt="spotify clone" />
@@ -166,7 +169,7 @@
       </div>
     </div>
   </section>
-  <section class="contact" id="contact">
+  <section class="contact" id="contact" data-aos-duration="1000" data-aos="zoom-in">
     <div class="contact__heading">
       <h2>Contact Me</h2>
     </div>
@@ -222,6 +225,8 @@
     <p>2020 Copyright Helmi Agustiawan - All rights reserved</p>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./public/js/main.js"></script>
 </body>
 

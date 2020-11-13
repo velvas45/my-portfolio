@@ -25,3 +25,31 @@ button.addEventListener("click", () => {
     });
   }
 });
+
+// ANIMATE ON SCROLL
+AOS.init();
+
+// TYPED JS
+var typed = new Typed(".banner__automated", {
+  strings: [
+    "Front End Web Developer.",
+    "Web Developer.",
+    "Web Enthusiast.",
+    "React Developer.",
+  ],
+  typeSpeed: 100,
+  backSpeed: 60,
+  loop: true,
+});
+
+var typed = new Typed(".about__automated", {
+  strings: [
+    "Front End Web Developer.",
+    "Web Developer.",
+    "Web Enthusiast.",
+    "React Developer.",
+  ],
+  typeSpeed: 100,
+  backSpeed: 60,
+  loop: true,
+});
